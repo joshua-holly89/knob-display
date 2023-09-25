@@ -1,0 +1,24 @@
+<div class="wrapper">
+  <h1>Knob display</h1>
+
+  <h2>Static example</h2>
+  <div>with min. 10, current 22 and max. 50</div>
+  <app-knob></app-knob>
+
+  <h2>Dynamic example</h2>
+  <div class="input-wrapper">
+    <label for="min">min.:</label>
+    <input class="parameter" type="number" placeholder="minimum" [(ngModel)]="minimum"
+      max="{{target}}" name="min">
+    <label for="target">target.:</label>
+    <input class="parameter" type="number" placeholder="target" [(ngModel)]="target"
+      min="{{minimum}}" max="{{maximum}}" name="target^1">
+    <label for="max">max.:</label>
+    <input class="parameter" type="number" placeholder="maximum" [(ngModel)]="maximum"
+      min="{{target}}" name="max">
+  </div>
+  <app-knob [minimum]="minimum" [target]="target"
+    [maximum]="maximum">
+  </app-knob>
+
+</div>

@@ -1,0 +1,25 @@
+.wrapper {
+  display: inline-block;
+  margin: 20px;
+}
+
+.image-container {
+  width: 269px;
+  height: 310px;
+  position: relative;
+}
+
+.knob {
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+.markers {
+  z-index: -1;
+}
+
+.target-temeperature {
+  text-align: center;
+  font-size: 20px;
+}
